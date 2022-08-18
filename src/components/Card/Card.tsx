@@ -24,7 +24,6 @@ const Card = ({ userInfo }: any) => {
             className="trash"
             src={trash}
             onClick={() => {
-              console.log("from card trash");
               dispatch(filterUsers(userInfo.login.uuid));
               dispatch(setFilter(""));
             }}

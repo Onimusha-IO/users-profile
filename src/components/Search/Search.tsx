@@ -20,7 +20,6 @@ const Search = () => {
         value={filter}
         placeholder="Search"
         onChange={(e) => {
-          console.log("input: ", e.target.value);
           dispatch(setFilter(e.target.value));
         }}
       />
@@ -35,7 +34,7 @@ const Search = () => {
             }}
           />
         ) : (
-          <img className="search" src={search} alt="search icon" />
+          <img className="glass" src={search} alt="search icon" />
         )}
       </div>
     </div>
