@@ -25,7 +25,6 @@ const Card = ({ userInfo }: any) => {
             src={trash}
             onClick={() => {
               dispatch(filterUsers(userInfo.login.uuid));
-              dispatch(setFilter(""));
             }}
             alt="delete button"
           />
