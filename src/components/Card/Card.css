@@ -1,0 +1,50 @@
+.card {
+    min-width: 320px;
+    min-height: 350px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.avatar {
+    display: flex;
+    justify-content: center;
+}
+
+.avatar img {
+    border-radius: 50%;
+}
+
+.trash{
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+}
+
+.cardTittle {
+    margin: 20px;
+    text-align: center;
+}
+
+.name {
+    font-weight: 600;
+}
+
+.location {
+    font-weight: 500;
+    color: gray;
+}
+
+.subTittle {
+    font-weight: 600;
+}
+
+.contact {
+    font-weight: 500;
+    color: gray;
+}
