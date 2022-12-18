@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
 import { nanoid } from "nanoid";
@@ -9,11 +9,10 @@ import { getUsers } from "../../redux/slice/userSlice";
 import "./List.css";
 
 const List = () => {
-  const [list, setList] = useState([]);
 
   const dispatch = useDispatch();
 
-  const users = useSelector((state: any) => {
+  const list = useSelector((state: any) => {
     return state.userSlice.list;
   });
 
@@ -25,9 +24,7 @@ const List = () => {
     if (list.length === 0) {
       getUsers(dispatch);
     }
-
-    setList(users);
-  }, [users]);
+  }, []);
 
   return (
     <div className="list">
